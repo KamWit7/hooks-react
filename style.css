@@ -1,0 +1,53 @@
+/* Styl dla wszystkich przycisków */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styl dla przycisku "add one" */
+#add-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+#add-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+#add-button:active {
+  animation: pulse 0.2s ease-in-out;
+}
+
+/* Styl dla przycisku "subtract one" */
+#subtract-button {
+  background-color: #f44336;
+  color: white;
+}
+
+#subtract-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+#subtract-button:active {
+  animation: pulse 0.2s ease-in-out;
+}
+
+/* Animacja pulsowania */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
